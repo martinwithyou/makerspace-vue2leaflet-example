@@ -1,6 +1,5 @@
 <template>
     <div id="visualization">
-        <h1>{{ msg }}</h1>
         <l-map ref="map"
                :zoom="zoom"
                :center="center"
@@ -25,29 +24,6 @@
         iconUrl: require('leaflet/dist/images/marker-icon.png'),
         shadowUrl: require('leaflet/dist/images/marker-shadow.png')
     });
-
-    function styleFunction(feature) {
-        return {
-            fillColor: getColor(feature.properties.density),
-            weight: 2,
-            opacity: 1,
-            color: 'white',
-            dashArray: '3',
-            fillOpacity: 0.7
-        }
-    }
-
-    function getColor(populationDensity) {
-        return populationDensity > 1000 ? '#800026' :
-            populationDensity > 500  ? '#BD0026' :
-            populationDensity > 200  ? '#E31A1C' :
-            populationDensity > 100  ? '#FC4E2A' :
-            populationDensity > 50   ? '#FD8D3C' :
-            populationDensity > 20   ? '#FEB24C' :
-            populationDensity > 10   ? '#FED976' :
-                                    '   #FFEDA0';
-    }
-
     export default {
         name: 'Visualization',
         props: {
@@ -62,16 +38,14 @@
         data () {
             return {
                 zoom: 5,
-                center: L.latLng(43, -89),
+                center: L.latLng(36, 120),
                 url: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
                 attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
                 marker: L.latLng(36, -120),
                 statesData: {
                     geojson: data.statesData,
                     options: {
-                        style: function(feature) {
-                            return styleFunction(feature)
-                        }
+
                     }
                 }
             }

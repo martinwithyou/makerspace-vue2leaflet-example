@@ -1,29 +1,32 @@
 <template>
   <div id="app">
-    <HeaderUSWDSBanner></HeaderUSWDSBanner>
-    <HeaderUSGS></HeaderUSGS>
-    <HeaderUSWDSSelections titleForSelectionHeader="Any Project Name Here"></HeaderUSWDSSelections>
-    <Visualization msg="Another Intuitive and Informative Visualization"/>
-    <FooterUSGS></FooterUSGS>
+    <!-- <HeaderUSWDSBanner></HeaderUSWDSBanner> -->
+    <!-- <HeaderUSGS></HeaderUSGS> -->
+    <!-- <HeaderUSWDSSelections titleForSelectionHeader="Any Project Name Here"></HeaderUSWDSSelections> -->
+    <!-- <Visualization msg="Another Intuitive and Informative Visualization"/> -->
+    <!-- <FooterUSGS></FooterUSGS> -->
+    <Visualization />
   </div>
 </template>
 
 
 <script>
-  import HeaderUSWDSBanner from './components/HeaderUSWDSBanner'
-  import HeaderUSWDSSelections from './components/HeaderUSWDSSelections'
-  import HeaderUSGS from './components/HeaderUSGS'
-  import Visualization from './components/Visualization'
-  import FooterUSGS from './components/FooterUSGS'
+  // import HeaderUSWDSBanner from './components/HeaderUSWDSBanner'
+  // import HeaderUSWDSSelections from './components/HeaderUSWDSSelections'
+  // import HeaderUSGS from './components/HeaderUSGS'
+  // import Visualization from './components/Visualization'
+  // import FooterUSGS from './components/FooterUSGS'
+  import Visualization from './components/Visualization_2'
 
   export default {
     name: 'app',
     components: {
-      HeaderUSWDSBanner,
-      HeaderUSGS,
-      HeaderUSWDSSelections,
-      Visualization,
-      FooterUSGS
+      Visualization
+      // HeaderUSWDSBanner,
+      // HeaderUSGS,
+      // HeaderUSWDSSelections,
+      // Visualization,
+      // FooterUSGS
     }
   }
 </script>

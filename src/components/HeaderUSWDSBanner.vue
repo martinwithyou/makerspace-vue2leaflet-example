@@ -1,5 +1,5 @@
 <template>
-    <div id="HeaderUSWDSBanner">
+    <div id="HeaderUSWDSBanner" style="border:2px solid red">
         <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 
         <section class="usa-banner">
