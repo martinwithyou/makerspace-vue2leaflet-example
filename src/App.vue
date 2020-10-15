@@ -16,7 +16,7 @@
   // import HeaderUSGS from './components/HeaderUSGS'
   // import Visualization from './components/Visualization'
   // import FooterUSGS from './components/FooterUSGS'
-  import Visualization from './components/Visualization_2'
+  import Visualization from './components/Visualization2'
 
   export default {
     name: 'app',
